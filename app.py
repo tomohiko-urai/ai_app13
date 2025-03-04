@@ -43,7 +43,8 @@ if img_file is not None:
        # img = img.resize((image_size,image_size))
         
         model = YOLO('last.pt')
-        ret = model(img,save=True, conf=0.4, iou=0.1)
+        #ret = model(img,save=True, conf=0.4, iou=0.1)
+        ret = model(img,save=True, conf=0.1, iou=0.1)
         annotated_frame = ret[0].plot(labels=True,conf=True)
         annotated_frame = cv2.cvtColor(annotated_frame , cv2.COLOR_BGR2RGB)
         
