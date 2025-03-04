@@ -76,7 +76,7 @@ if img_file is not None:
         evaluation = math.floor((shine1 + shine2 + shine3 + shine4 + shine5)/total )
         st.write("## 粒の数:" , total)
         st.write("## 収穫判定:" ,evaluation ) 
-        st.write("## 収穫判定:" ,(shine1 + shine2 + shine3 + shine4 + shine5)/total ) 
+        #st.write("## 収穫判定:" ,(shine1 + shine2 + shine3 + shine4 + shine5)/total ) 
 
 
 
