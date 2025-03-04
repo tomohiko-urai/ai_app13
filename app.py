@@ -7,7 +7,6 @@ from PIL import Image
 import streamlit as st
 import cv2
 from ultralytics import YOLO
-粒の数: {len(shinemuscat1) + len(shinemuscat2) + len(shinemuscat3) + len(shinemuscat4) + len(shinemuscat5)}
 
 image_size = 50
 
