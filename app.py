@@ -59,7 +59,7 @@ if img_file is not None:
         #st.write(categories[y] + "です。")
 
       #****** 2025/03/05
-        categories = ret[0].boxes.cls
+        categories = ret[0].boxes.cls #
         shinemuscat1 = [x for x in categories if x == 0]
         shinemuscat2 = [x for x in categories if x == 1]
         shinemuscat3 = [x for x in categories if x == 2]
@@ -74,8 +74,8 @@ if img_file is not None:
 
         total =len(shinemuscat1) + len(shinemuscat2) + len(shinemuscat3) + len(shinemuscat4) + len(shinemuscat5)
    
-        st.write("粒の数:" , total)
-        st.write("収穫判定:" ,(shine1 + shine2 + shine3 + shine4 + shine5)/total ) 
+        st.write("# 粒の数:" , total)
+        st.write("# 収穫判定:" ,(shine1 + shine2 + shine3 + shine4 + shine5)/total ) 
 
 
 
