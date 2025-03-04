@@ -33,8 +33,8 @@ if img_file is not None:
     with st.spinner("推定中..."):
         img = Image.open(img_file)
         if  img_source != "カメラで撮影":
-           st.image(img, caption="対象の画像", width=280,height =280)
-           #st.image(img, caption="対象の画像", use_column_width=True)
+           #st.image(img, caption="対象の画像", width=280,height =280)
+           st.image(img, caption="対象の画像", use_column_width=True)
        
       #st.image(img, caption="対象の画像", width=480)
         st.write("")
@@ -53,8 +53,8 @@ if img_file is not None:
     #with col2:       
         #st.subheader("判定結果")
         st.subheader("判定結果")
-        #st.image(annotated_frame, caption='出力画像', width=280) 
-        st.image(annotated_frame, caption='出力画像', width=280,height=280) 
+        st.image(annotated_frame, caption='出力画像', width=280) 
+        #st.image(annotated_frame, caption='出力画像', width=280,height=280) 
         #st.write(camerapos[y] + "です。")
         #st.write(categories[y] + "です。")
 
