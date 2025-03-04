@@ -27,13 +27,17 @@ if img_source == "画像をアップロード":
     img_file = st.sidebar.file_uploader("画像を選択してください。", type=["png", "jpg","JPG"])
 elif img_source == "カメラで撮影":
 #with col1:    
-#    img_file = st.camera_input("カメラで撮影")
+    img_file = st.camera_input("カメラで撮影")
 
 #with col2:
 if img_file is not None:
     with st.spinner("推定中..."):
         img = Image.open(img_file)
-        #st.image(img, caption="対象の画像", width=480)
+        if  img_source != "カメラで撮影":
+           #st.image(img, caption="対象の画像", width=280)
+           st.image(img, caption="対象の画像", width=480)
+       
+      #st.image(img, caption="対象の画像", width=480)
         st.write("")
 
         img = img.convert("RGB")
