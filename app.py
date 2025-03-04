@@ -74,7 +74,7 @@ if img_file is not None:
         total =len(shinemuscat1) + len(shinemuscat2) + len(shinemuscat3) + len(shinemuscat4) + len(shinemuscat5)
    
 
-        st.write("粒の数:" + total + "です。")
+        st.write("粒の数:" , total)
 
 
 
