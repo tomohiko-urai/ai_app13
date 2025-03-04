@@ -64,7 +64,17 @@ if img_file is not None:
         shinemuscat3 = [x for x in categories if x == 2]
         shinemuscat4 = [x for x in categories if x == 3]
         shinemuscat5 = [x for x in categories if x == 4]
-        st.write("粒の数:" + (len(shinemuscat1) + len(shinemuscat2) + len(shinemuscat3) + len(shinemuscat4) + len(shinemuscat5))+ "です。")
+
+        shine1 = 1 * len(shinemuscat1)
+        shine2 = 2 * len(shinemuscat2)
+        shine3 = 3 * len(shinemuscat3)
+        shine4 = 4 * len(shinemuscat4)
+        shine5 = 5 * len(shinemuscat5)
+
+        total =len(shinemuscat1) + len(shinemuscat2) + len(shinemuscat3) + len(shinemuscat4) + len(shinemuscat5)
+   
+
+        st.write("粒の数:" + total + "です。")
 
 
 
