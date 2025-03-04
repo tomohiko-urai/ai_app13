@@ -73,7 +73,7 @@ if img_file is not None:
         shine5 = 5 * len(shinemuscat5)
 
         total =len(shinemuscat1) + len(shinemuscat2) + len(shinemuscat3) + len(shinemuscat4) + len(shinemuscat5)
-        evaluation = math.floor((shine1 + shine2 + shine3 + shine4 + shine5)/total )
+        #evaluation = math.floor((shine1 + shine2 + shine3 + shine4 + shine5)/total )
         evaluation = "{:.2f}".format((shine1 + shine2 + shine3 + shine4 + shine5)/total )
         st.write("## 粒の数:" , total)
         st.write("## 収穫判定:" ,evaluation ) 
