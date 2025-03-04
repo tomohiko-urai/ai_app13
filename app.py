@@ -56,3 +56,16 @@ if img_file is not None:
         st.image(annotated_frame, caption='出力画像', width=280) 
         #st.write(camerapos[y] + "です。")
         #st.write(categories[y] + "です。")
+
+      #****** 2025/03/05
+        categories = ret[0].boxes.cls
+        shinemuscat1 = [x for x in categories if x == 0]
+        shinemuscat2 = [x for x in categories if x == 1]
+        shinemuscat3 = [x for x in categories if x == 2]
+        shinemuscat4 = [x for x in categories if x == 3]
+        shinemuscat5 = [x for x in categories if x == 4]
+        st.write(粒の数: (len(shinemuscat1) + len(shinemuscat2) + len(shinemuscat3) + len(shinemuscat4) + len(shinemuscat5))+ "です。")
+
+
+
+
