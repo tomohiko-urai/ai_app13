@@ -7,7 +7,7 @@ from PIL import Image
 import streamlit as st
 import cv2
 from ultralytics import YOLO
-
+粒の数: {len(shinemuscat1) + len(shinemuscat2) + len(shinemuscat3) + len(shinemuscat4) + len(shinemuscat5)}
 
 image_size = 50
 
@@ -64,7 +64,7 @@ if img_file is not None:
         shinemuscat3 = [x for x in categories if x == 2]
         shinemuscat4 = [x for x in categories if x == 3]
         shinemuscat5 = [x for x in categories if x == 4]
-        st.write("粒の数:" + (len(shinemuscat1) + len(shinemuscat2) + len(shinemuscat3) + len(shinemuscat4) + len(shinemuscat5))+ "です。")
+      #  st.write("粒の数:" + (len(shinemuscat1) + len(shinemuscat2) + len(shinemuscat3) + len(shinemuscat4) + len(shinemuscat5))+ "です。")
 
 
 
