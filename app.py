@@ -13,8 +13,8 @@ image_size = 50
 
 st.set_option("deprecation.showfileUploaderEncoding", False)
 
-st.sidebar.title("シャインマスカット収穫時期判定アプリ-ai-app13")
-st.sidebar.write("画像認識モデルを使ってシャインマスカットの収穫時期の判定をします。")
+st.sidebar.title("シャインマスカット房粒数カウント、収穫時期判定アプリ-ai-app13")
+st.sidebar.write("画像認識モデルを使ってシャインマスカットの房粒数カウント、収穫時期の判定をします。")
 
 st.sidebar.write("")
 col1,col2 = st.columns(2)
