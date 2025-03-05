@@ -81,6 +81,6 @@ try:
         #st.write("## 収穫判定:" ,(shine1 + shine2 + shine3 + shine4 + shine5)/total ) 
 except AttributeError:
  #st.error("エラー：判定出来ませんでした”）   
- st.write("エラー：判定出来ませんでした”）   
+ st.write("エラー：判定出来ませんでした")   
 
 
