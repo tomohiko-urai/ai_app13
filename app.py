@@ -29,7 +29,8 @@ elif img_source == "カメラで撮影":
     img_file = st.camera_input("カメラで撮影")
 
 #with col2:
-if img_file is not None:
+try:
+ if img_file is not None:
     with st.spinner("推定中..."):
         img = Image.open(img_file)
         if  img_source != "カメラで撮影":
@@ -78,6 +79,7 @@ if img_file is not None:
         st.write("## 粒の数:" , total)
         st.write("## 収穫判定:" ,evaluation ) 
         #st.write("## 収穫判定:" ,(shine1 + shine2 + shine3 + shine4 + shine5)/total ) 
-
+except:AttributeError:
+ st.error("エラー：判定出来ませんでした”）   
 
 
