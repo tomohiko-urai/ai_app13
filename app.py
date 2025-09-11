@@ -1,5 +1,10 @@
 #-*- coding:utf-8 -*-
 
+# YOLOv5 🚀 by Ultralytics
+# License: AGPL-3.0 (https://www.gnu.org/licenses/agpl-3.0.html)
+# Repository: https://github.com/ultralytics/yolov5
+
+
 import sys, os
 from PIL import Image
 #import numpy as np
@@ -7,6 +12,9 @@ import math
 import streamlit as st
 import cv2
 from ultralytics import YOLO
+
+
+
 
 image_size = 50
 
