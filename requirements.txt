@@ -10,12 +10,13 @@ Pillow==10.1.0
 #****　20250304
 #torch>=1.8
 ### OK torch==1.8
-torch==2.5
+torch
+### 2026/09/09 torch==2.5
 #math== 3.9
 #*****
 
 # yolov5
 #ultralytics
+##### 2026/09/09 ultralytics==8.0.219
 ultralytics==8.0.219
-
 
