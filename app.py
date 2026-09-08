@@ -19,7 +19,7 @@ from ultralytics import YOLO
 image_size = 50
 
 
-st.set_option("deprecation.showfileUploaderEncoding", False)
+### 2026/09/09 st.set_option("deprecation.showfileUploaderEncoding", False)
 
 st.sidebar.title("シャインマスカット房粒数カウント、収穫時期判定アプリ-ai-app13")
 st.sidebar.write("画像認識モデルを使ってシャインマスカットの房粒数カウント、収穫時期の判定をします。")
