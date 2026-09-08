@@ -7,7 +7,7 @@ streamlit
 
 #opencv-python-headless>=4.1.2
 #### 2026/09/09 opencv-python-headless==4.6.0.66
-opencv-python-headless
+##  2026/09/09 opencv-python-headless
 
 
 #opencv-python==4.6.0.66
@@ -25,4 +25,4 @@ torch
 #ultralytics
 ##### 2026/09/09 ultralytics==8.0.219
 ultralytics
-
+opencv-python-headless
