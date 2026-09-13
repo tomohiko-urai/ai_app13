@@ -6,6 +6,12 @@ WORKDIR /app
 LABEL maintainer="Your Name <your.email@example.com>" \
       description="Streamlit app for Fish Classification using YOLOv5" \
       license="AGPL-3.0"
+# ① OSパッケージのインストール（最小限の2つのみ指定）
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    libglib2.0-0 \
+    libsm6 \
+    && rm -rf /var/lib/apt/lists/*
+
 
 # ② 【添付】自分のPC上の LICENSE ファイルをコンテナ内の /app/LICENSE へコピー
 COPY LICENSE /app/LICENSE
