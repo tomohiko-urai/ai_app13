@@ -6,12 +6,15 @@ WORKDIR /app
 LABEL maintainer="Your Name <your.email@example.com>" \
       description="Streamlit app for Fish Classification using YOLOv5" \
       license="AGPL-3.0"
-# ① OSパッケージのインストール（最小限の2つのみ指定）
+# キャッシュの影響を受けないよう必要なOSライブラリを網羅
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    libxcb1 \
-    libx11-xcb1 \
     libgl1 \
     libglib2.0-0 \
+    libsm6 \
+    libxext6 \
+    libxrender-dev \
+    libxcb1 \
+    libx11-xcb1 \
     && rm -rf /var/lib/apt/lists/*
 
 
